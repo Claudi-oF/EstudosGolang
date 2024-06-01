@@ -4,6 +4,18 @@ import (
 	"fmt"
 )
 
+type cliente struct {
+	nome      string
+	sobrenome string
+	fumante   bool
+}
+
 func main() {
-	fmt.Printf("Ola")
+	cliente1 := cliente{
+		nome:      "Joao",
+		sobrenome: "Vitor",
+		fumante:   true,
+	}
+
+	fmt.Println(cliente1)
 }
